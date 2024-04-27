@@ -1,8 +1,17 @@
+// Import de la police d'écriture "Montserrat"
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+// Variables de couleurs
 $kaki-color: #939661;
 $orange-color: #d87c4a;
 $dark-kaki-color: #665c55;
 $dark-color: #3f3f3f;
 $black-color: #050408;
+
+body {
+    background-color: black;
+    margin: 0;
+}
 
 * {
     margin: 0;
@@ -10,27 +19,39 @@ $black-color: #050408;
     box-sizing: border-box;
     text-decoration: none;
     list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 // Header => logo / Menu / barre de navigation
 
 header {
+    box-shadow: 2px 2px 15px black;
+    height: 6em;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     div {
+        display: flex;
+        align-items: center;
+        //height: 6em;
         img {
-            max-width: 8em;
+            width: 11em;
         }
     }
     nav {
-        width: 60%;
+        width: 45%;
         ul {
             display: flex;
             justify-content: space-around;
             align-items: center;
             li {
+                font-size: 1.1em;
+                a:nth-child(1) {
+                    img {
+                        margin-right: 0.5em;
+                    }
+                }
                 img {
                     width: 2em;
                 }
