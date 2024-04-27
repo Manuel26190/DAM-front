@@ -8,9 +8,17 @@ $dark-kaki-color: #665c55;
 $dark-color: #3f3f3f;
 $black-color: #050408;
 
+// Variables d'ombres
+$box-shadow: 2px 2px 15px black;
+$box-shadow-orange: 2px 5px 15px #d87c4a;
+
 body {
     background-color: black;
     margin: 0;
+}
+
+.container {
+    max-width: 1140px;
 }
 
 * {
@@ -25,7 +33,7 @@ body {
 // Header => logo / Menu / barre de navigation
 
 header {
-    box-shadow: 2px 2px 15px black;
+    box-shadow: $box-shadow;
     height: 6em;
     display: flex;
     justify-content: space-between;
@@ -47,6 +55,9 @@ header {
             align-items: center;
             li {
                 font-size: 1.1em;
+                a {
+                    color: $dark-color;
+                }
                 a:nth-child(1) {
                     img {
                         margin-right: 0.5em;
@@ -55,6 +66,67 @@ header {
                 img {
                     width: 2em;
                 }
+                a:hover {
+                    color: $orange-color;
+                }
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 1em;
+    // box-shadow: $box-shadow-orange;
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // Section du diaporama d'images
+        .diaporama-section {
+            height: 30em;
+            width: 100%;
+            .diaporama-container-div {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 30em;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0; /* Masque toutes les images sauf la première */
+                    transition: opacity 2000ms ease; /* Ajoute une transition de fondu pour une animation plus douce */
+                }
+                .diaporama-container-div img:first-child {
+                    opacity: 1; /* Affiche seulement la première image */
+                }
+            }
+        }
+        // Section du titre et de la présentation du site
+        .presentation-section {
+            margin-top: 5em;
+            .presentation-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    font-size: 2.5em;
+                    font-weight: 600;
+                    color: $kaki-color;
+                    text-shadow: 2px 2px 2px $dark-kaki-color;
+                }
+                .presentation-text {
+                    margin-top: 1.5em;
+                    display: flex;
+                    letter-spacing: 0.5px;
+                    line-height: 1.5em;
+                }
+                img {
+                    max-width: 25em;
+                }
             }
         }
     }
@@ -62,16 +134,49 @@ header {
 
 // Footer => pied de page / mentions légales / contact
 footer {
+    margin-top: 30em;
     background-color: $black-color;
     color: white;
     width: 100%;
     height: 5em;
-    position: absolute;
-    bottom: 0;
-    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
     h6 {
         font-size: 1.2em;
         text-align: center;
-        margin-top: 2em;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 1024px) {
+    header {
+        nav {
+            width: 75%;
+        }
+    }
+    main {
+        article {
+            .diaporama-section {
+                img {
+                    zoom: 30%;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    header {
+        nav {
+            ul {
+                li:nth-child(1),
+                li:nth-child(2),
+                li:nth-child(3),
+                li:nth-child(4) {
+                    display: none;
+                }
+            }
+        }
     }
 }
