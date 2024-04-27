@@ -1,0 +1,13 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+header div img {
+  max-width: 8em;
+}
+header nav ul li img {
+  width: 2em;
+}/*# sourceMappingURL=app.component.css.map */

@@ -1,0 +1,56 @@
+$kaki-color: #939661;
+$orange-color: #d87c4a;
+$dark-kaki-color: #665c55;
+$dark-color: #3f3f3f;
+$black-color: #050408;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+// Header => logo / Menu / barre de navigation
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    div {
+        img {
+            max-width: 8em;
+        }
+    }
+    nav {
+        width: 60%;
+        ul {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            li {
+                img {
+                    width: 2em;
+                }
+            }
+        }
+    }
+}
+
+// Footer => pied de page / mentions légales / contact
+footer {
+    background-color: $black-color;
+    color: white;
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    h6 {
+        font-size: 1.2em;
+        text-align: center;
+        margin-top: 2em;
+    }
+}
