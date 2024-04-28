@@ -1,13 +1,11 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 
 @Component({
-    selector: 'app-root',
-    templateUrl: './app.component.html',
-    styleUrl: './app.component.scss',
+    selector: 'app-home',
+    templateUrl: './home.component.html',
+    styleUrl: './home.component.scss',
 })
-export class AppComponent implements OnInit {
-    title = 'projet-dwwm'
-
+export class HomeComponent {
     images: string[] = [
         '../assets/diaporama/Vautour-fauve-2.jpg',
         '../assets/pictures/Niverolle_alpine.jpg',
@@ -48,6 +46,6 @@ export class AppComponent implements OnInit {
 
                 this.currentImageIndex = nextImageIndex
             }
-        }, 8000) // Change d'image toutes les 8 secondes
+        }, 9000) // Change d'image toutes les 9 secondes
     }
 }

@@ -1,57 +1,57 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 body {
-  background-color: black;
-  margin: 0;
+    background-color: black;
+    margin: 0;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
-  list-style-type: none;
-  font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Montserrat', sans-serif;
 }
 
 header {
-  height: 6em;
-  background-color: #665c55;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    height: 6em;
+    background-color: #665c55;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 header div {
-  height: 6em;
+    height: 6em;
 }
 header div img {
-  height: 6em;
+    height: 6em;
 }
 header nav {
-  width: 60%;
+    width: 60%;
 }
 header nav ul {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 header nav ul li a:nth-child(1) img {
-  margin-right: 0.5em;
+    margin-right: 0.5em;
 }
 header nav ul li img {
-  width: 2em;
+    width: 2em;
 }
 
 footer {
-  background-color: #050408;
-  color: white;
-  width: 100%;
-  height: 5em;
-  position: absolute;
-  bottom: 0;
-  left: 0;
+    background-color: #050408;
+    color: white;
+    width: 100%;
+    height: 5em;
+    position: absolute;
+    bottom: 0;
+    left: 0;
 }
 footer h6 {
-  font-size: 1.2em;
-  text-align: center;
-  margin-top: 2em;
-}/*# sourceMappingURL=app.component.css.map */
+    font-size: 1.2em;
+    text-align: center;
+    margin-top: 2em;
+}
