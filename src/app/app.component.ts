@@ -1,53 +1,31 @@
-import { Component, OnInit } from '@angular/core'
+import { Component, OnInit, Renderer2 } from '@angular/core'
+import { Router } from '@angular/router'
 
 @Component({
     selector: 'app-root',
     templateUrl: './app.component.html',
-    styleUrl: './app.component.scss',
+    styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
-    title = 'projet-dwwm'
-
-    images: string[] = [
-        '../assets/diaporama/Vautour-fauve-2.jpg',
-        '../assets/pictures/Niverolle_alpine.jpg',
-        '../assets/pictures/couple-oiseau.jpg',
-        '../assets/pictures/Niverolle_alpine_2.jpg',
-        '../assets/pictures/oiseau-rocher.jpg',
-    ]
-    currentImageIndex = 0
-
-    constructor() {}
+    constructor(private router: Router, private renderer: Renderer2) {}
 
     ngOnInit(): void {
-        this.startSlideshow()
-    }
+        const section = document.querySelector('.app-section')
+        // Ajoute la classe visible après un délai de 4 secondes
+        setTimeout(() => {
+            this.renderer.addClass(section, 'visible')
+        }, 100)
+        // Redirige vers la page d'accueil après 6 secondes
 
-    startSlideshow(): void {
-        setInterval(() => {
-            // Afficher l'image suivante
-            const nextImageIndex =
-                (this.currentImageIndex + 1) % this.images.length
+        setTimeout(() => {
+            this.renderer.addClass(section, 'invisible')
+            setTimeout(() => {
+                section?.remove()
+            }, 3000)
+        }, 3000)
 
-            // Transition de l'opacité de l'image actuelle à 0
-            const currentImageElement = document.getElementById(
-                'image-' + this.currentImageIndex
-            )
-            if (currentImageElement) {
-                currentImageElement.style.opacity = '0'
-            }
-
-            // Transition de l'opacité de l'image suivante à 1
-            const nextImageElement = document.getElementById(
-                'image-' + nextImageIndex
-            )
-            if (nextImageElement) {
-                setTimeout(() => {
-                    nextImageElement.style.opacity = '1'
-                }, 100) // Retard pour permettre à la première image de rester visible un court instant
-
-                this.currentImageIndex = nextImageIndex
-            }
-        }, 8000) // Change d'image toutes les 8 secondes
+        setTimeout(() => {
+            this.router.navigate(['/home'])
+        }, 5500)
     }
 }

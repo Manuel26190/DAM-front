@@ -46,6 +46,6 @@ export class HomeComponent {
 
                 this.currentImageIndex = nextImageIndex
             }
-        }, 9000) // Change d'image toutes les 9 secondes
+        }, 5000) // Change d'image toutes les 8 secondes
     }
 }

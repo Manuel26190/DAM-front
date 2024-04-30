@@ -1,0 +1,84 @@
+@import '../../styles.scss';
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.home-section {
+    animation: fadeIn 2000ms ease-in-out;
+}
+
+main {
+    margin-top: 1em;
+
+    article {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        // Section du diaporama d'images
+        .diaporama-section {
+            height: 30em;
+            width: 100%;
+            .diaporama-container-div {
+                position: relative;
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 30em;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0; /* Masque toutes les images sauf la première */
+                    transition: opacity 2000ms ease; /* Ajoute une transition de fondu pour une animation plus douce */
+                }
+                .diaporama-container-div img:first-child {
+                    opacity: 1; /* Affiche seulement la première image */
+                }
+            }
+        }
+        // Section du titre et de la présentation du site
+        .presentation-section {
+            margin-top: 5em;
+            .presentation-div {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                h1 {
+                    font-size: 2.5em;
+                    font-weight: 600;
+                    color: $kaki-color;
+                    text-shadow: 2px 2px 2px $dark-kaki-color;
+                }
+                .presentation-text {
+                    margin-top: 1.5em;
+                    display: flex;
+                    letter-spacing: 0.5px;
+                    line-height: 1.5em;
+                }
+                img {
+                    max-width: 25em;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    main {
+        article {
+            .diaporama-section {
+                img {
+                    zoom: 30%;
+                }
+            }
+        }
+    }
+}
