@@ -1,13 +1,10 @@
-import { NgModule } from '@angular/core'
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core'
 import { CommonModule } from '@angular/common'
 import { HomeComponent } from './home.component'
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core'
-import { FooterModule } from '../../components/footer/footer.module'
-import { HeaderModule } from '../../components/header/header.module'
-
+import { BrowserModule } from '@angular/platform-browser'
 @NgModule({
     declarations: [HomeComponent],
-    imports: [CommonModule, FooterModule, HeaderModule],
+    imports: [BrowserModule, CommonModule],
     exports: [HomeComponent],
     schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })

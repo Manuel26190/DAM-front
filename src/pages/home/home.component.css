@@ -1,0 +1,83 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+.container {
+  max-width: 1140px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+main {
+  margin-top: 1em;
+}
+main article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article .diaporama-section {
+  height: 30em;
+  width: 100%;
+}
+main article .diaporama-section .diaporama-container-div {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+main article .diaporama-section .diaporama-container-div img {
+  width: 100%;
+  height: 30em;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0; /* Masque toutes les images sauf la première */
+  transition: opacity 2000ms ease; /* Ajoute une transition de fondu pour une animation plus douce */
+}
+main article .diaporama-section .diaporama-container-div .diaporama-container-div img:first-child {
+  opacity: 1; /* Affiche seulement la première image */
+}
+main article .presentation-section {
+  margin-top: 5em;
+}
+main article .presentation-section .presentation-div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main article .presentation-section .presentation-div h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+  color: #939661;
+  text-shadow: 2px 2px 2px #665c55;
+}
+main article .presentation-section .presentation-div .presentation-text {
+  margin-top: 1.5em;
+  display: flex;
+  letter-spacing: 0.5px;
+  line-height: 1.5em;
+}
+main article .presentation-section .presentation-div img {
+  max-width: 25em;
+}
+
+@media (max-width: 1024px) {
+  main article .diaporama-section img {
+    zoom: 30%;
+  }
+}/*# sourceMappingURL=home.component.css.map */

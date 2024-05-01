@@ -1,0 +1,30 @@
+@import '../../styles.scss';
+
+.welcome-section {
+    height: 100vh;
+    display: flex;
+    opacity: 0;
+    flex-direction: column;
+    justify-content: center;
+    transition: opacity 2.5s ease-in-out, transform 2.5s ease-in-out; // Transition de 2.5 secondes pour l'opacité et la transformation
+    transform: scale(0.9); // Échelle initiale légèrement réduite
+
+    div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        p {
+            font-size: 7em;
+        }
+    }
+}
+.visible {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.invisible {
+    opacity: 0;
+    transform: scale(0.9);
+}

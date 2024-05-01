@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../styles.scss","footer.component.css","footer.component.scss"],"names":[],"mappings":"AAGQ,+GAAA;AAaR;EACI,iBAAA;ACdJ;;ADiBA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;EACA,qBAAA;EACA,qBAAA;EACA,qCAAA;ACdJ;;ACTA;EACI,yBFMU;EELV,YAAA;EACA,WAAA;EACA,WAAA;EACA,aAAA;EACA,mBAAA;EACA,uBAAA;ADYJ;ACVI;EACI,gBAAA;EACA,kBAAA;EACA,gBAAA;ADYR","file":"footer.component.css"}
