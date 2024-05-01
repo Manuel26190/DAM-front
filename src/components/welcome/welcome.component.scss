@@ -1,6 +1,7 @@
 @import '../../styles.scss';
 
 .welcome-section {
+    z-index: 3;
     height: 100vh;
     display: flex;
     opacity: 0;
