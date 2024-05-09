@@ -16,13 +16,13 @@ export class WelcomeComponent implements OnInit {
             // montre le texte en 0.1 sec
             welcomeSection.style.opacity = '1'
             setTimeout(() => {
-                // Cache le texte au bout de 3.5 sec
+                // Cache le texte au bout de 2.5 sec
                 welcomeSection.style.opacity = '0'
                 setTimeout(() => {
-                    // Redirection vers '/home' après 3.5 secondes
+                    // Redirection vers '/home' après 2.5 secondes
                     this.router.navigate(['/home'])
-                }, 3000)
-            }, 3500)
+                }, 2000)
+            }, 2000)
         }, 100)
     }
 }

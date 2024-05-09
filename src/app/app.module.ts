@@ -6,6 +6,7 @@ import { HeaderModule } from '../components/header/header.module'
 import { FooterModule } from '../components/footer/footer.module'
 import { HomeModule } from '../pages/home/home.module'
 import { CommonModule } from '@angular/common'
+import { WelcomeModule } from '../components/welcome/welcome.module'
 
 @NgModule({
     declarations: [AppComponent],
@@ -15,6 +16,7 @@ import { CommonModule } from '@angular/common'
         HeaderModule,
         FooterModule,
         HomeModule,
+        WelcomeModule,
         CommonModule,
     ],
     providers: [],
