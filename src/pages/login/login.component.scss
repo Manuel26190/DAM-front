@@ -1,0 +1,51 @@
+// Variables de couleurs
+$kaki-color: #939661;
+$orange-color: #d87c4a;
+$dark-kaki-color: #665c55;
+$dark-color: #3f3f3f;
+$black-color: #050408;
+
+// Variables d'ombre
+$box-shadow: 2px 2px 15px black;
+$box-shadow-light: 2px 2px 6px #665c55;
+$box-shadow-orange: 2px 5px 15px #d87c4a;
+
+.form-section {
+    //height: 70vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 2em;
+    margin: 0 10em 0 10em;
+    background-color: #9396617d;
+    h2 {
+        font-size: 2.5em;
+    }
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 1em;
+        padding: 1em;
+        input {
+            padding: 1em;
+            width: 20em;
+            box-shadow: $box-shadow-light;
+        }
+        button {
+            padding: 0.5em 1em;
+            box-shadow: $box-shadow-light;
+            cursor: pointer;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            column-gap: 1em;
+            width: 100%;
+        }
+        .forget-password-btn {
+            width: 10em;
+        }
+    }
+}
