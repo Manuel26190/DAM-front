@@ -1,19 +1,53 @@
 <section class="form-section">
-    <h2>Connexion</h2>
-    <form action="" method="get">
-        <label for="">
-            <input type="email" placeholder="E-mail" />
-        </label>
-        <label for="">
-            <input type="password" name="" id="" placeholder="Mot de passe" />
-        </label>
-        <div class="sign-up-forget-password">
-            <button type="submit">Se connecter</button>
-            <p>ou</p>
-            <button type="button">S'inscrire</button>
-        </div>
-        <button type="button" class="forget-password-btn">
-            Mot de passe oublié
-        </button>
-    </form>
+    <article>
+        <form action="" method="get">
+            <h2>S'IDENTIFIER</h2>
+            <div class="form-img-div">
+                <img src="../../assets/logo/icon-lens-2.png" alt="" />
+            </div>
+            <fieldset>
+                <div class="email-pass-div">
+                    <div>
+                        <img src="../../assets/logo/user-solid.svg" alt="" />
+                    </div>
+
+                    <label for="email"></label>
+                    <input
+                        type="email"
+                        name="email"
+                        id="email"
+                        placeholder="Saisissez votre email"
+                    />
+                </div>
+                <div class="password-div">
+                    <div>
+                        <img src="../../assets/logo/lock-solid.svg" alt="" />
+                    </div>
+                    <label for="password"></label>
+                    <input
+                        type="password"
+                        name="password"
+                        id="password"
+                        placeholder="Saisissez votre mot de passe"
+                    />
+                </div>
+                <div>
+                    <a href=""
+                        ><p class="forgot-password-text">
+                            Mot de passe oublié ?
+                        </p></a
+                    >
+                </div>
+                <div class="submit-div">
+                    <button type="submit" class="submit-btn">
+                        Se connecter
+                    </button>
+                </div>
+                <div>
+                    <h3>S'INSCRIRE</h3>
+                    <button class="registrer-btn">Créer mon compte</button>
+                </div>
+            </fieldset>
+        </form>
+    </article>
 </section>

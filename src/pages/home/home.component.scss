@@ -10,7 +10,7 @@
 }
 
 main {
-    margin-top: 1em;
+    margin-top: 0.8em;
     animation: 2500ms fadeIn;
     article {
         display: flex;
@@ -42,7 +42,7 @@ main {
         }
         // Section du titre et de la présentation du site
         .presentation-section {
-            margin-top: 5em;
+            padding: 5em;
             .presentation-div {
                 display: flex;
                 flex-direction: column;
@@ -54,10 +54,12 @@ main {
                     text-shadow: 2px 2px 2px $dark-kaki-color;
                 }
                 .presentation-text {
-                    margin-top: 1.5em;
                     display: flex;
                     letter-spacing: 0.5px;
                     line-height: 1.5em;
+                    p {
+                        padding: 1em;
+                    }
                 }
                 img {
                     max-width: 25em;
@@ -67,6 +69,7 @@ main {
     }
 }
 
+// Responsive du site
 @media (max-width: 1024px) {
     main {
         article {
