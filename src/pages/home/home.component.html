@@ -1,17 +1,5 @@
 <main>
     <article>
-        <!--Section qui affiche le diaporama d'images-->
-        <section class="diaporama-section">
-            <div class="diaporama-container-div">
-                <img
-                    *ngFor="let image of images; let i = index"
-                    [src]="image"
-                    [alt]="'Image ' + (i + 1)"
-                    [style.opacity]="i === 0 ? 1 : 0"
-                    [id]="'image-' + i"
-                />
-            </div>
-        </section>
         <!--Section qui affiche le titre et la présentation du site-->
         <section class="presentation-section container">
             <div class="presentation-div">
@@ -32,6 +20,28 @@
                         alt=""
                     />
                 </div>
+            </div>
+        </section>
+        <!-- Section qui affiche les deux blocs Events et publications -->
+        <section class="event-post-section container">
+            <div class="event-div">
+                <h2>Évènements</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Consequatur repudiandae quaerat asperiores harum quos
+                    quisquam ducimus, voluptatum aliquam. Recusandae itaque
+                    nobis asperiores saepe tenetur necessitatibus quam
+                    perferendis totam, voluptatem culpa.
+                </p>
+            </div>
+            <div class="post-div">
+                <h2>Publications</h2>
+                <p>
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Expedita id beatae repellat ex, iste voluptate error quidem
+                    aliquam. Veniam amet consequatur doloribus adipisci quis
+                    omnis nulla quasi, sapiente molestiae qui!
+                </p>
             </div>
         </section>
     </article>

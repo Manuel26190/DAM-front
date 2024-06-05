@@ -1,46 +1,96 @@
 @import '../../styles.scss';
 
+// Variables de couleurs
+$kaki-color: #939661;
+$orange-color: #d87c4a;
+$dark-kaki-color: #665c55;
+$dark-color: #3f3f3f;
+$black-color: #050408;
+
+// Variables d'ombre
+$box-shadow: 2px 2px 15px black;
+$box-shadow-orange: 2px 5px 15px #d87c4a;
+
+* {
+    box-sizing: border-box !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 // Header => logo / Menu / barre de navigation
 header {
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    box-shadow: $box-shadow;
-    height: 6em;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    div {
-        display: flex;
-        align-items: center;
-        img {
-            width: 11em;
-        }
-    }
     nav {
-        width: 45%;
-        ul {
-            display: flex;
-            justify-content: space-around;
-            align-items: center;
-            li {
-                font-size: 1.1em;
-                a {
-                    color: $dark-color;
-                }
-                a:nth-child(1) {
-                    img {
-                        margin-right: 0.5em;
-                    }
-                }
+        position: fixed !important;
+        top: 0;
+        z-index: 100;
+        div {
+            a {
                 img {
-                    width: 2em;
-                }
-                a:hover {
-                    color: $orange-color;
+                    max-width: 7em;
                 }
             }
+            div {
+                ul {
+                    width: 55%;
+                    li {
+                        position: relative;
+                    }
+                    li:nth-child(1)::before,
+                    li:nth-child(2)::before,
+                    li:nth-child(3)::before,
+                    li:nth-child(4)::before {
+                        content: '';
+                        width: 0%;
+                        top: 1.5em;
+                        left: 0;
+                        border-bottom: 3px solid #050408;
+                        position: absolute;
+                        transition: width 1000ms ease;
+                    }
+
+                    li:nth-child(1):hover::before,
+                    li:nth-child(2):hover::before,
+                    li:nth-child(3):hover::before,
+                    li:nth-child(4):hover::before {
+                        width: 100%;
+                        border-color: $orange-color;
+                    }
+                }
+            }
+        }
+    }
+}
+.user-icon-img {
+    height: 2em;
+}
+.nav-rs-img {
+    height: 2em;
+}
+.rs-li {
+    display: flex;
+    column-gap: 1em;
+}
+
+// Section du diaporama d'images
+.diaporama-section {
+    height: 100vh;
+    width: 100%;
+    .diaporama-container-div {
+        position: relative;
+        width: 100%;
+        height: 100vh;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0;
+            transition: opacity 2000ms ease;
+        }
+        .diaporama-container-div img:first-child {
+            opacity: 1;
         }
     }
 }

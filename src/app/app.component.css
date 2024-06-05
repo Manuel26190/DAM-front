@@ -10,4 +10,15 @@
   text-decoration: none;
   list-style-type: none;
   font-family: "Montserrat", sans-serif;
+}
+
+body {
+  position: relative;
+}
+
+.app-section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=app.component.css.map */

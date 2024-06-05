@@ -12,11 +12,15 @@
   font-family: "Montserrat", sans-serif;
 }
 
+body {
+  position: relative;
+}
+
 footer {
   background-color: #050408;
   color: white;
   width: 100%;
-  height: 5em;
+  height: 8em;
   display: flex;
   align-items: center;
   justify-content: center;

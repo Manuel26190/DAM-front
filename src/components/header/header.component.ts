@@ -1,10 +1,50 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core'
 
 @Component({
-  selector: 'app-header',
-  templateUrl: './header.component.html',
-  styleUrl: './header.component.scss'
+    selector: 'app-header',
+    templateUrl: './header.component.html',
+    styleUrl: './header.component.scss',
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
+    images: string[] = [
+        '../assets/diaporama/vautour-fauve.jfif',
+        '../assets/pictures/Niverolle_alpine.jpg',
+        '../assets/pictures/couple-oiseau.jpg',
+        '../../assets/diaporama/Faucon_crecerelle.webp',
+    ]
+    currentImageIndex = 0
 
+    constructor() {}
+
+    ngOnInit(): void {
+        this.startSlideshow()
+    }
+
+    startSlideshow(): void {
+        setInterval(() => {
+            // Afficher l'image suivante
+            const nextImageIndex =
+                (this.currentImageIndex + 1) % this.images.length
+
+            // Transition de l'opacité de l'image actuelle à 0
+            const currentImageElement = document.getElementById(
+                'image-' + this.currentImageIndex
+            )
+            if (currentImageElement) {
+                currentImageElement.style.opacity = '0'
+            }
+
+            // Transition de l'opacité de l'image suivante à 1
+            const nextImageElement = document.getElementById(
+                'image-' + nextImageIndex
+            )
+            if (nextImageElement) {
+                setTimeout(() => {
+                    nextImageElement.style.opacity = '1'
+                }, 100) // Retard pour permettre à la première image de rester visible un court instant
+
+                this.currentImageIndex = nextImageIndex
+            }
+        }, 15000) // Change d'image toutes les 8 secondes
+    }
 }

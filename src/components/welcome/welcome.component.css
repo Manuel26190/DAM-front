@@ -14,4 +14,21 @@
 
 body {
   position: relative;
-}/*# sourceMappingURL=styles.css.map */
+}
+
+.welcome-section {
+  z-index: 3;
+  height: 100vh;
+  display: flex;
+  opacity: 0.1;
+  flex-direction: column;
+  justify-content: center;
+}
+.welcome-section div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-section div p {
+  font-size: 7em;
+}/*# sourceMappingURL=welcome.component.css.map */

@@ -10,39 +10,15 @@
 }
 
 main {
-    margin-top: 0.8em;
     animation: 2500ms fadeIn;
     article {
         display: flex;
         flex-direction: column;
         align-items: center;
 
-        // Section du diaporama d'images
-        .diaporama-section {
-            height: 30em;
-            width: 100%;
-            .diaporama-container-div {
-                position: relative;
-                width: 100%;
-                height: 100%;
-                img {
-                    width: 100%;
-                    height: 30em;
-                    object-fit: cover;
-                    position: absolute;
-                    top: 0;
-                    left: 0;
-                    opacity: 0; /* Masque toutes les images sauf la première */
-                    transition: opacity 2000ms ease; /* Ajoute une transition de fondu pour une animation plus douce */
-                }
-                .diaporama-container-div img:first-child {
-                    opacity: 1; /* Affiche seulement la première image */
-                }
-            }
-        }
         // Section du titre et de la présentation du site
         .presentation-section {
-            padding: 5em;
+            padding: 8em 0;
             .presentation-div {
                 display: flex;
                 flex-direction: column;
@@ -64,6 +40,31 @@ main {
                 img {
                     max-width: 25em;
                 }
+            }
+        }
+        .event-post-section {
+            display: flex;
+            height: 50vh;
+            padding: 4em 0 8em 0;
+            h2 {
+            }
+            .event-div {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 2em;
+                background-color: aliceblue;
+                width: 50%;
+            }
+            .post-div {
+                width: 50%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                padding: 2em;
+                background-color: aliceblue;
             }
         }
     }

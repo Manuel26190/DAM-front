@@ -1,9 +1,10 @@
 import { Component, OnInit } from '@angular/core'
 import { Router } from '@angular/router'
+
 @Component({
     selector: 'app-welcome',
     templateUrl: './welcome.component.html',
-    styleUrl: './welcome.component.scss',
+    styleUrls: ['./welcome.component.scss'],
 })
 export class WelcomeComponent implements OnInit {
     constructor(private router: Router) {}
@@ -13,7 +14,7 @@ export class WelcomeComponent implements OnInit {
             '.welcome-section'
         ) as HTMLElement
         setTimeout(() => {
-            // montre le texte en 0.1 sec
+            // Affiche le texte en 0.1 sec
             welcomeSection.style.opacity = '1'
             setTimeout(() => {
                 // Cache le texte au bout de 2.5 sec
