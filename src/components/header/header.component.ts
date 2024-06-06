@@ -8,9 +8,13 @@ import { Component, OnInit } from '@angular/core'
 export class HeaderComponent implements OnInit {
     images: string[] = [
         '../assets/diaporama/vautour-fauve.jfif',
-        '../assets/pictures/Niverolle_alpine.jpg',
-        '../assets/pictures/couple-oiseau.jpg',
+        '../assets/diaporama/Niverolle_alpine_2.jpg',
+        //'../assets/pictures/couple-oiseau.jpg',
         '../../assets/diaporama/Faucon_crecerelle.webp',
+        '../../assets/diaporama/diapo_1.jpeg',
+        '../../assets/diaporama/diapo_2.jpeg',
+        '../../assets/diaporama/diapo_3.jpeg',
+        '../../assets/diaporama/diapo_4.jpeg',
     ]
     currentImageIndex = 0
 
@@ -45,6 +49,6 @@ export class HeaderComponent implements OnInit {
 
                 this.currentImageIndex = nextImageIndex
             }
-        }, 15000) // Change d'image toutes les 8 secondes
+        }, 10000) // Change d'image toutes les 8 secondes
     }
 }

@@ -58,16 +58,31 @@ header nav div div ul li:nth-child(4):hover::before {
 
 .user-icon-img {
   height: 2em;
+  transition: all 500ms ease;
 }
 
-.nav-rs-img {
+.user-icon-img:hover {
+  transform: scale(1.1);
+  opacity: 0.7;
+}
+
+.nav-social-network-img {
   height: 2em;
+  transition: all 500ms ease;
 }
 
-.rs-li {
+.social-network-li img:hover {
+  transform: scale(1.1);
+}
+
+.social-network-li {
   display: flex;
   -moz-column-gap: 1em;
        column-gap: 1em;
+}
+
+.dropdown-menu li {
+  border-bottom: none;
 }
 
 .diaporama-section {

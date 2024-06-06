@@ -49,10 +49,12 @@ main article .presentation-section .presentation-div h1 {
 main article .presentation-section .presentation-div .presentation-text {
   display: flex;
   letter-spacing: 0.5px;
-  line-height: 1.5em;
+  line-height: 2.5em;
 }
 main article .presentation-section .presentation-div .presentation-text p {
-  padding: 1em;
+  padding: 1.2em;
+  text-align: center;
+  font-size: 1.4em;
 }
 main article .presentation-section .presentation-div img {
   max-width: 25em;
