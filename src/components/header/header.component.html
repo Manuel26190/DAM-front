@@ -80,14 +80,14 @@
                     </li>
                     <li class="nav-item">
                         <a
+                            routerLink="/contact"
                             class="nav-link active"
                             aria-current="page"
-                            routerLink="#"
                             >Contact</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" routerLink="/user_profile"
+                        <a class="nav-link" routerLink="/user-profile"
                             >User Profile</a
                         >
                     </li>
@@ -129,4 +129,63 @@
             />
         </div>
     </section>
+    <!-- modale / formulaire de contact -->
+    <div #modalElement class="popup modal" id="popup">
+        <div class="popup-inner">
+            <div class="popup__photo">
+                <img
+                    src="https://images.unsplash.com/photo-1515224526905-51c7d77c7bb8?ixlib=rb-0.3.5&s=9980646201037d28700d826b1bd096c4&auto=format&fit=crop&w=700&q=80"
+                    alt=""
+                />
+            </div>
+            <div class="popup__text">
+                <h2>Pour nous contacter</h2>
+                <form action="https://formspree.io/f/moqgojbd" method="POST">
+                    <div class="form-adress-div">
+                        <p>
+                            Dissonance Studio <br />
+                            350 route des pacaliers <br />
+                            26190 Saint-Laurent en Royans
+                        </p>
+                        <div>
+                            <a href="mailto:"
+                                ><i class="fa-solid fa-envelope"></i> adresse
+                                email</a
+                            >
+                            <a href="tel:">
+                                <i class="fa-solid fa-phone"></i
+                                >06.82.07.65.07</a
+                            >
+                        </div>
+                    </div>
+                    <label for="name">
+                        <input
+                            required
+                            type="text"
+                            name="name"
+                            id="name"
+                            placeholder="Saisissez votre nom"
+                        />
+                    </label>
+                    <label for="email">
+                        <input
+                            required
+                            type="email"
+                            name="email"
+                            placeholder="Saisissez votre Email"
+                        />
+                    </label>
+                    <label for="message">
+                        <textarea
+                            required
+                            name="message"
+                            placeholder="Saisissez votre message"
+                        ></textarea>
+                    </label>
+                    <button type="submit" name="submit">Envoyer</button>
+                </form>
+            </div>
+            <a class="popup__close" href="/home">X</a>
+        </div>
+    </div>
 </header>

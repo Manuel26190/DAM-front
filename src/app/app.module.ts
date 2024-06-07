@@ -7,7 +7,6 @@ import { FooterModule } from '../components/footer/footer.module'
 import { HomeModule } from '../pages/home/home.module'
 import { CommonModule } from '@angular/common'
 import { WelcomeModule } from '../components/welcome/welcome.module'
-import { UserProfileModule } from '../pages/user_profile/user-profile/user-profile.module'
 
 @NgModule({
     declarations: [AppComponent],
@@ -16,8 +15,8 @@ import { UserProfileModule } from '../pages/user_profile/user-profile/user-profi
         AppRoutingModule,
         HeaderModule,
         FooterModule,
-        HomeModule,
-        WelcomeModule,
+        // HomeModule,
+        // WelcomeModule,
         CommonModule,
     ],
     providers: [],

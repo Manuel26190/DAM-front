@@ -1,4 +1,4 @@
-.form-section {
+.user-profile-section {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,18 +13,18 @@
   top: 0;
   position: absolute;
 }
-.form-section h2 {
+.user-profile-section h2 {
   font-size: 1.6em;
   color: white;
   margin: 1em 0;
   text-shadow: 2px 2px 4px black;
 }
-.form-section article {
+.user-profile-section article {
   position: relative;
   padding: 2em 0 0 0;
   z-index: 2;
 }
-.form-section form {
+.user-profile-section form {
   padding: 3.5em 2em 2em 2em;
   border-radius: 1.5em;
   background-color: rgba(147, 150, 97, 0.4901960784);
@@ -34,19 +34,19 @@
   box-shadow: 2px 2px 15px black;
   border: 6px double white;
 }
-.form-section form fieldset {
+.user-profile-section form fieldset {
   border: none;
   display: flex;
   flex-direction: column;
   row-gap: 1.5em;
   width: 20em;
 }
-.form-section form fieldset .email-pass-div {
+.user-profile-section form fieldset .email-pass-div {
   position: relative;
   display: flex;
   align-items: center;
 }
-.form-section form fieldset .email-pass-div div {
+.user-profile-section form fieldset .email-pass-div div {
   width: 4em;
   height: 3.5em;
   background-color: white;
@@ -55,17 +55,17 @@
   justify-content: center;
   box-shadow: 2px 2px 6px #665c55;
 }
-.form-section form fieldset .email-pass-div div img {
+.user-profile-section form fieldset .email-pass-div div img {
   width: 1.5em;
   height: 1.5em;
   position: absolute;
 }
-.form-section form fieldset .password-div {
+.user-profile-section form fieldset .password-div {
   position: relative;
   display: flex;
   align-items: center;
 }
-.form-section form fieldset .password-div div {
+.user-profile-section form fieldset .password-div div {
   width: 4em;
   height: 3.5em;
   background-color: white;
@@ -74,26 +74,26 @@
   justify-content: center;
   box-shadow: 2px 2px 6px #665c55;
 }
-.form-section form fieldset .password-div div img {
+.user-profile-section form fieldset .password-div div img {
   width: 1.5em;
   height: 1.5em;
   position: absolute;
 }
-.form-section form fieldset .forgot-password-text {
+.user-profile-section form fieldset .forgot-password-text {
   text-align: center;
   color: black;
 }
-.form-section form fieldset .forgot-password-text:hover {
+.user-profile-section form fieldset .forgot-password-text:hover {
   color: white;
 }
-.form-section form input {
+.user-profile-section form input {
   padding: 1em;
   box-shadow: 2px 2px 6px #665c55;
   border: none;
   width: 100%;
   font-size: 1em;
 }
-.form-section form button {
+.user-profile-section form button {
   padding: 1em;
   width: 100%;
   box-shadow: 2px 2px 6px #665c55;
@@ -101,34 +101,34 @@
   border: none;
   font-size: 1em;
 }
-.form-section form .submit-btn:hover {
+.user-profile-section form .submit-btn:hover {
   color: #d87c4a;
 }
-.form-section form .registrer-btn {
+.user-profile-section form .registrer-btn {
   background: transparent;
   color: white;
   font-weight: 500;
   border: 2px double white;
   text-shadow: 1px 1px 2px black;
 }
-.form-section form .registrer-btn:hover {
+.user-profile-section form .registrer-btn:hover {
   border-color: #d87c4a;
 }
-.form-section form .form-img-div {
+.user-profile-section form .form-img-div {
   position: absolute;
   top: 0;
 }
-.form-section form .form-img-div img {
+.user-profile-section form .form-img-div img {
   width: 5em;
 }
-.form-section form .submit-div {
+.user-profile-section form .submit-div {
   border-bottom: 1px solid white;
   padding-bottom: 1.3em;
 }
-.form-section form h3 {
+.user-profile-section form h3 {
   font-size: 1.3em;
   color: white;
   margin: 0.8em 0;
   text-shadow: 2px 2px 4px black;
   text-align: center;
-}/*# sourceMappingURL=login.component.css.map */
+}/*# sourceMappingURL=user-profile.component.css.map */
