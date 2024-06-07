@@ -14,7 +14,7 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
     display: flex;
     flex-direction: column;
     align-items: center;
-
+    justify-content: center;
     padding: 6em 5em 2em 5em;
     background-image: url('../../assets/pictures/Aigle_royal_2.jpg');
     background-repeat: no-repeat;
@@ -54,10 +54,11 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
             .email-pass-div {
                 position: relative;
                 display: flex;
+                align-items: center;
 
                 div {
                     width: 4em;
-                    height: 3.3em;
+                    height: 3.5em;
                     background-color: white;
                     display: flex;
                     align-items: center;
@@ -73,9 +74,10 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
             .password-div {
                 position: relative;
                 display: flex;
+                align-items: center;
                 div {
                     width: 4em;
-                    height: 3.3em;
+                    height: 3.5em;
                     background-color: white;
                     display: flex;
                     align-items: center;

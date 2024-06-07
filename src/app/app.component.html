@@ -4,6 +4,10 @@
     <router-outlet></router-outlet>
 
     <app-footer
-        *ngIf="currentRoute !== '/login' && currentRoute !== '/'"
+        *ngIf="
+            currentRoute !== '/login' &&
+            currentRoute !== '/' &&
+            currentRoute !== '/user_profile'
+        "
     ></app-footer>
 </section>

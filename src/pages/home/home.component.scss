@@ -1,5 +1,16 @@
 @import '../../styles.scss';
 
+// Variables de couleurs
+$kaki-color: #939661;
+$orange-color: #d87c4a;
+$dark-kaki-color: #665c55;
+$dark-color: #3f3f3f;
+$black-color: #050408;
+
+// Variables d'ombre
+$box-shadow: 2px 2px 15px black;
+$box-shadow-orange: 2px 5px 15px #d87c4a;
+
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -15,6 +26,7 @@ main {
         display: flex;
         flex-direction: column;
         align-items: center;
+        margin: auto;
 
         // Section du titre et de la présentation du site
         .presentation-section {
@@ -32,17 +44,18 @@ main {
                 .presentation-text {
                     display: flex;
                     letter-spacing: 0.5px;
-                    line-height: 2.5em;
+                    line-height: 2.2em;
                     p {
-                        padding: 1.2em;
-                        text-align: center;
-                        font-size: 1.4em;
+                        padding: 1.3em;
+                        text-align: justify;
+                        font-size: 1.2em;
+                        font-weight: 500;
                     }
                 }
                 img {
                     max-width: 25em;
                     float: right;
-                    margin: 0 0 1.5em 1.5em;
+                    margin: 0 0 1em 2em;
                 }
             }
         }
@@ -50,25 +63,58 @@ main {
         .event-post-section {
             display: flex;
             height: 50vh;
-            padding: 4em 0 8em 0;
-            .event-div {
+            justify-content: space-between;
+            //padding: 4em 0 0 0;
+            margin-bottom: 7em;
+            h2 {
+                text-shadow: 1px 1px 1px $dark-color;
+                color: #fbfbfb;
+            }
+            p {
+                color: #fbfbfb;
+                text-shadow: 1px 1px 1px $dark-color;
+                font-size: 1.1em;
+                text-align: center;
+            }
+            .post-event-div {
                 display: flex;
                 flex-direction: column;
-                justify-content: space-around;
+                justify-content: center;
                 align-items: center;
-                padding: 2em;
-                background-color: aliceblue;
-                width: 50%;
+                padding: 5em;
+                gap: 2em;
+                background-color: $kaki-color;
+                width: 48%;
+                box-shadow: 4px 4px 15px rgb(155, 155, 155);
+                border-radius: 50%;
+            }
+            .event-div {
+                background-color: $kaki-color;
             }
             .post-div {
-                width: 50%;
-                display: flex;
-                flex-direction: column;
-                justify-content: space-around;
-                align-items: center;
-                padding: 2em;
-                background-color: aliceblue;
+                background-color: $orange-color;
             }
+            // .post-div::before {
+            //     content: '';
+            //     border: 3px solid $orange-color;
+            //     border-radius: 50%;
+            //     width: 0%;
+            //     height: 0%;
+            //     position: absolute;
+            //     //bottom: 0;
+            //     left: 50%;
+            //     top: 50%;
+            //     opacity: 0;
+            //     transition: opacity 2000ms ease, width 1000ms ease,
+            //     height 1000ms ease;
+            // }
+            // .post-div:hover::before {
+            //     width: 100%;
+            //     height: 100%;
+            //     left: 0;
+            //     top: 0;
+            //     opacity: 0.5;
+            // }
         }
     }
 }

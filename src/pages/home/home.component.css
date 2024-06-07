@@ -31,6 +31,7 @@ main article {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: auto;
 }
 main article .presentation-section {
   padding: 8em 0;
@@ -49,42 +50,87 @@ main article .presentation-section .presentation-div h1 {
 main article .presentation-section .presentation-div .presentation-text {
   display: flex;
   letter-spacing: 0.5px;
-  line-height: 2.5em;
+  line-height: 2.2em;
 }
 main article .presentation-section .presentation-div .presentation-text p {
-  padding: 1.2em;
-  text-align: center;
-  font-size: 1.4em;
+  padding: 1.3em;
+  text-align: justify;
+  font-size: 1.2em;
+  font-weight: 500;
 }
 main article .presentation-section .presentation-div img {
   max-width: 25em;
+  float: right;
+  margin: 0 0 1em 2em;
 }
 main article .event-post-section {
   display: flex;
   height: 50vh;
-  padding: 4em 0 8em 0;
+  justify-content: space-between;
+  margin-bottom: 7em;
+}
+main article .event-post-section h2 {
+  text-shadow: 1px 1px 1px #3f3f3f;
+  color: #fbfbfb;
+}
+main article .event-post-section p {
+  color: #fbfbfb;
+  text-shadow: 1px 1px 1px #3f3f3f;
+  font-size: 1.1em;
+  text-align: center;
+}
+main article .event-post-section .post-event-div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5em;
+  gap: 2em;
+  background-color: #939661;
+  width: 48%;
+  box-shadow: 4px 4px 15px rgb(155, 155, 155);
+  border-radius: 50%;
 }
 main article .event-post-section .event-div {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2em;
-  background-color: aliceblue;
-  width: 50%;
+  background-color: #939661;
 }
 main article .event-post-section .post-div {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  padding: 2em;
-  background-color: aliceblue;
+  background-color: #d87c4a;
 }
 
 @media (max-width: 1024px) {
-  main article .diaporama-section img {
-    zoom: 30%;
+  main article .presentation-section {
+    padding: 6em 0 0;
+  }
+}
+@media (max-width: 768px) {
+  main article .presentation-section {
+    padding: 0;
+  }
+  main article .presentation-section .presentation-div .presentation-text p {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  main article .presentation-section .presentation-div .presentation-text img {
+    width: 90%;
+    float: none;
+    margin: 1.5em 0 0 0;
+  }
+  main article .event-post-section {
+    flex-direction: column;
+    height: auto;
+    padding: 4em 0;
+  }
+  main article .event-post-section .event-div {
+    width: auto;
+  }
+  main article .event-post-section .post-div {
+    width: auto;
+  }
+}
+@media (max-width: 380px) {
+  main article .presentation-section .presentation-div .presentation-text p {
+    padding: 0 1.2em 1.2em 1.2em;
   }
 }/*# sourceMappingURL=home.component.css.map */

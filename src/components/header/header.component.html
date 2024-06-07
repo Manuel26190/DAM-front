@@ -1,7 +1,7 @@
 <header>
     <nav class="navbar navbar-expand-lg bg-body-tertiary w-100">
         <div class="container-fluid w-100">
-            <a class="navbar-brand" href="#"
+            <a class="navbar-brand" routerLink="/home"
                 ><img src="../../assets/logo/logo_zoom_alpin-2.png" alt=""
             /></a>
             <button
@@ -35,12 +35,12 @@
                         <ul class="dropdown-menu">
                             <li>
                                 <a class="dropdown-item" href="#"
-                                    >Liste des évènement</a
+                                    >Liste des évènements</a
                                 >
                             </li>
                             <li>
                                 <a class="dropdown-item" href="#"
-                                    >Ajouter un évènement</a
+                                    >Créer un évènement</a
                                 >
                             </li>
                             <li>
@@ -79,15 +79,20 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"
+                        <a
+                            class="nav-link active"
+                            aria-current="page"
+                            routerLink="#"
                             >Contact</a
                         >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">User Profile</a>
+                        <a class="nav-link" routerLink="/user_profile"
+                            >User Profile</a
+                        >
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"
+                        <a class="nav-link" routerLink="/login"
                             ><img
                                 class="user-icon-img"
                                 src="../../assets/logo/user-solid.svg"

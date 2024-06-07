@@ -12,9 +12,9 @@ $box-shadow: 2px 2px 15px black;
 $box-shadow-orange: 2px 5px 15px #d87c4a;
 
 * {
-    box-sizing: border-box !important;
-    margin: 0 !important;
-    padding: 0 !important;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 // Header => logo / Menu / barre de navigation
@@ -31,15 +31,15 @@ header {
                 }
             }
             div {
-                ul {
-                    width: 55%;
+                .navbar-nav {
+                    width: 60%;
                     li {
                         position: relative;
                     }
-                    li:nth-child(1)::before,
-                    li:nth-child(2)::before,
-                    li:nth-child(3)::before,
-                    li:nth-child(4)::before {
+                    .nav-item {
+                        transition: 1000ms ease;
+                    }
+                    .nav-item::before {
                         content: '';
                         width: 0%;
                         top: 1.5em;
@@ -61,6 +61,18 @@ header {
         }
     }
 }
+.dropdown-menu {
+    top: 2.5em;
+    li {
+        a {
+            height: auto;
+            //margin-top: 0.5em;
+            //text-align: center;
+            padding: 0.5em;
+        }
+    }
+}
+
 .user-icon-img {
     height: 2em;
     transition: all 500ms ease;
@@ -108,6 +120,11 @@ header {
 }
 
 // Gestion de la responsive
+@media (max-width: 1260px) {
+    .navbar-nav {
+        width: 70% !important;
+    }
+}
 
 @media (max-width: 1024px) {
     header {
