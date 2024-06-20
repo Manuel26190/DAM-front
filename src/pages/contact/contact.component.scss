@@ -11,12 +11,11 @@ $box-shadow-light: 2px 2px 6px #665c55;
 $box-shadow-orange: 2px 5px 15px #d87c4a;
 
 .contact-section {
-    //background-color: aliceblue;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6em 5em 2em 5em;
+    padding: 5em 5em 2em 5em;
     background-image: url('../../assets/pictures/Aigle_royal_2.jpg');
     background-repeat: no-repeat;
     background-size: cover;

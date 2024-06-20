@@ -1,56 +1,60 @@
 <section class="user-profile-section">
     <article>
         <h2>Profil</h2>
+        <div class="profil-info-div">
+            <img src="../../assets/logo/profil-homme.png" alt="" />
+            <p>Pseudo</p>
+            <p>manuelfaure26190gmail.com</p>
+        </div>
         <div class="profile-div">
             <div class="btn-profile-div">
-                <h3 type="button">Publications</h3>
-                <h3 type="button">Évènements</h3>
+                <h3 (click)="openModal('post')" class="post-btn" type="button">
+                    Publications
+                </h3>
+                <h3
+                    (click)="openModal('event')"
+                    class="event-btn"
+                    type="button"
+                >
+                    Évènements
+                </h3>
+                <h3
+                    (click)="openModal('notif')"
+                    class="notif-btn"
+                    type="button"
+                >
+                    Notifications
+                </h3>
             </div>
-            <div class="data-profile-div">
-                <p>Publications créé le 20/05/24</p>
-                <p>Publications créé le 20/05/24</p>
-                <p>Publications créé le 20/05/24</p>
-                <p>Publications créé le 20/05/24</p>
-                <p>Publications créé le 20/05/24</p>
-                <p>Publications créé le 20/05/24</p>
-                <p>Publications créé le 20/05/24</p>
+            <div class="post-event-container">
+                <div class="post-profile-div modal-profile" #postModal>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                    <p>Publications créé le 20/05/24</p>
+                </div>
+                <div class="event-profile-div modal-profile" #eventModal>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                    <p>Event créé le 11/06/2024</p>
+                </div>
+                <div class="notif-profile-div modal-profile" #notifModal>
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                    <p>Notification reçu le 10/06/2024</p>
+                </div>
             </div>
         </div>
     </article>
 </section>
-
-<!-- <form action="" method="get">
-            <h2>Page de profil</h2>
-            <fieldset>
-                <div class="name-div input-div">
-                    <div>
-                        <img
-                            src="../../assets/logo/user-solid.svg"
-                            alt="logo utlisateur"
-                        />
-                    </div>
-                    <label for="name"></label>
-                    <input
-                        type="name"
-                        name="name"
-                        id="name"
-                        placeholder="Saisissez votre nom"
-                    />
-                </div>
-                <div class="email-div input-div">                   
-
-                    <label for="email"></label>
-                    <input
-                        type="email"
-                        name="email"
-                        id="email"
-                        placeholder="Saisissez votre email"
-                    />
-                </div>
-                <textarea
-                    name="message"
-                    id="message"
-                    placeholder="Saisissez votre message"
-                ></textarea>                
-            </fieldset>
-        </form> -->
