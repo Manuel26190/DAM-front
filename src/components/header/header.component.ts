@@ -9,7 +9,6 @@ export class HeaderComponent implements OnInit {
     images: string[] = [
         '../assets/diaporama/vautour-fauve.jfif',
         '../assets/diaporama/Niverolle_alpine_2.jpg',
-        //'../assets/pictures/couple-oiseau.jpg',
         '../../assets/diaporama/Faucon_crecerelle.webp',
         '../../assets/diaporama/diapo_1.jpeg',
         '../../assets/diaporama/diapo_2.jpeg',

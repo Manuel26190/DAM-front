@@ -15,7 +15,7 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 6em 5em 2em 5em;
+    padding: 8em 5em 2em 5em;
     background-image: url('../../assets/pictures/Aigle_royal_2.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -26,18 +26,18 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
     position: absolute;
 
     h2 {
-        font-size: 1.6em;
+        font-size: 1.4em;
         color: white;
         margin: 1em 0;
         text-shadow: 2px 2px 4px black;
     }
     article {
         position: relative;
-        padding: 2em 0 0 0;
+        padding: 1em 0 0 0;
         z-index: 2;
     }
     form {
-        padding: 3.5em 2em 2em 2em;
+        padding: 1em 2em 1em 2em;
         border-radius: 1.5em;
         background-color: #9396617d;
         display: flex;
@@ -58,7 +58,7 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
 
                 div {
                     width: 4em;
-                    height: 3.5em;
+                    height: 3em;
                     background-color: white;
                     display: flex;
                     align-items: center;
@@ -77,7 +77,7 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
                 align-items: center;
                 div {
                     width: 4em;
-                    height: 3.5em;
+                    height: 3em;
                     background-color: white;
                     display: flex;
                     align-items: center;
@@ -104,6 +104,7 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
             border: none;
             width: 100%;
             font-size: 1em;
+            height: 3em;
         }
         button {
             padding: 1em;
@@ -115,7 +116,6 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
         }
         .submit-btn:hover {
             color: #d87c4a;
-            //text-shadow: 1px 1px 1px $dark-color;
         }
 
         .registrer-btn {
@@ -130,7 +130,8 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
         }
         .form-img-div {
             position: absolute;
-            top: 0;
+            top: -25px;
+            z-index: 1000;
             img {
                 width: 5em;
             }

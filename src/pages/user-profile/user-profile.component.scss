@@ -58,23 +58,32 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
     }
     .profil-info-div {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center;
         gap: 1em;
         margin-bottom: 2em;
-        img {
-            max-width: 5em;
+        width: 100%;
+        div {
+            width: 15em;
+            display: flex;
+            justify-content: center;
         }
         p {
-            //text-align: center;
             margin: 0;
         }
+    }
+    img {
+        max-width: 5em;
+        margin-bottom: 2em;
     }
     .profile-div {
         width: 100%;
         display: flex;
         justify-content: space-around;
         .btn-profile-div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
         }
         .post-event-container {
             height: 20em;
@@ -104,6 +113,8 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
             p {
                 text-align: center;
                 border-bottom: 1px solid $dark-color;
+                margin: 0;
+                padding: 0.5em;
             }
         }
     }
@@ -112,7 +123,7 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
     width: 100%;
     height: 100%;
     overflow: hidden;
-    // visibility: hidden;
-    // opacity: 0;
-    // transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.display {
+    display: none;
 }
