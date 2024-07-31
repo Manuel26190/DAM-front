@@ -23,6 +23,9 @@ header {
         position: fixed !important;
         top: 0;
         z-index: 100;
+        .nav-item-login {
+            display: none;
+        }
 
         div {
             a {
@@ -66,8 +69,6 @@ header {
     li {
         a {
             height: auto;
-            //margin-top: 0.5em;
-            //text-align: center;
             padding: 0.5em;
         }
     }
@@ -122,17 +123,26 @@ header {
 // Gestion de la responsive
 @media (max-width: 1260px) {
     .navbar-nav {
-        width: 70% !important;
+        width: 100% !important;
+        row-gap: 1em;
     }
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1025px) {
     header {
         height: auto;
         .diaporama-section {
             height: auto;
             .diaporama-container-div {
                 height: 70vh;
+            }
+        }
+        .login-nav {
+            display: none;
+        }
+        nav {
+            .nav-item-login {
+                display: block;
             }
         }
     }

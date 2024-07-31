@@ -26,9 +26,9 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
     position: absolute;
 
     h2 {
-        font-size: 1.6em;
+        font-size: 1.4em;
         color: white;
-        margin: 2em 0;
+        margin: 1em 0;
         text-shadow: 2px 2px 4px black;
     }
     article {
@@ -39,7 +39,7 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
     }
     form {
         width: 100%;
-        padding: 1em;
+        padding: 0.5em;
         border-radius: 1.5em;
         background-color: #9396617d;
         display: flex;
@@ -55,13 +55,14 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
             row-gap: 1.7em;
             width: 100%;
             .input-div {
-                width: 60%;
+                width: 70%;
+                height: 3em;
                 position: relative;
                 display: flex;
                 align-items: center;
                 div {
                     width: 4em;
-                    height: 3.5em;
+                    height: 3em;
                     background-color: white;
                     display: flex;
                     align-items: center;
@@ -76,7 +77,8 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
             }
         }
         input {
-            padding: 1em;
+            height: 100%;
+            padding: 0.5em;
             box-shadow: $box-shadow-light;
             border: none;
             width: 100%;
@@ -99,6 +101,36 @@ $box-shadow-orange: 2px 5px 15px #d87c4a;
         .submit-btn:hover {
             color: #d87c4a;
             //text-shadow: 1px 1px 1px $dark-color;
+        }
+    }
+}
+
+// Gestion du responsive
+
+@media screen and (max-width: 1260px) {
+    .input-div {
+        width: 90% !important;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .contact-section {
+        padding: 12em 0;
+        justify-content: flex-start;
+    }
+}
+@media screen and (max-width: 769px) {
+    .contact-section {
+        padding: 8em 0;
+        article {
+            width: 50%;
+        }
+    }
+}
+@media screen and (max-width: 413px) {
+    .contact-section {
+        padding: 7em 0;
+        article {
+            width: 95%;
         }
     }
 }
