@@ -35,7 +35,11 @@ export class AddEventComponent implements OnInit {
         })
     }
 
-    ngOnInit() {
+    ngOnInit(): void {
+        // Initialiser le formulaire avec la valeur du placeholder
+        this.addEventForm = this.formBuilder.group({
+            type: [''], // L'option placeholder a une valeur vide
+        })
         this.id = this.route.snapshot.params['id']
     }
 

@@ -7,16 +7,14 @@
         >
             <h2>Ajouter un évènement</h2>
             <!-- Event title -->
-            <div>
-                <label for="event_name"></label>
-                <input
-                    type="text"
-                    id="event_name"
-                    placeholder="Titre"
-                    formControlName="title"
-                    class="p-2 w-100"
-                />
-            </div>
+            <label for="event_name"></label>
+            <input
+                type="text"
+                id="event_name"
+                placeholder="Titre"
+                formControlName="title"
+                class="p-2 w-75"
+            />
             <!-- Event description -->
             <label for="description"></label>
             <textarea
@@ -24,8 +22,24 @@
                 id="description"
                 placeholder="Description"
                 formControlName="description"
-                class="p-2 w-100"
+                class="p-2 w-75"
             ></textarea>
+            <!-- type d'évènement -->
+            <label for="type"></label>
+            <select
+                type="text"
+                id="type"
+                formControlName="type"
+                class="p-2 w-75"
+            >
+                <option value="" disabled selected>Type</option>
+                <option value="Conférences">Conférences</option>
+                <option value="Exposition">Exposition</option>
+                <option value="Observation">Observation</option>
+                <option value="Réunion">Réunion</option>
+                <option value="Rencontre">Rencontre</option>
+                <option value="Sortie nature">Sortie nature</option>
+            </select>
             <!-- location -->
             <label for="location"></label>
             <input
@@ -33,7 +47,7 @@
                 id="location"
                 placeholder="Lieu de l'évènement"
                 formControlName="location"
-                class="p-2"
+                class="p-2 w-75"
             />
             <!-- image -->
             <!-- <label for="image"></label>
@@ -51,11 +65,13 @@
                 id="image"
                 placeholder="Chargez votre image"
                 formControlName="image"
-                class="p-2"
+                class="p-2 w-75"
             />
 
             <!-- start date -->
-            <label for="date_start"></label>
+            <label class="text-light" for="date_start"
+                >Date de l'évènement :</label
+            >
             <input
                 type="date"
                 id="date_start"
@@ -63,7 +79,7 @@
                 formControlName="date_start"
                 class="p-2"
             />
-            <button type="submit" class="submit-btn w-50">Ajouter</button>
+            <button type="submit" class="submit-btn w-50 mt-3">Ajouter</button>
         </form>
     </article>
 </section>

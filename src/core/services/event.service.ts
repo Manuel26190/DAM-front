@@ -11,7 +11,7 @@ export class EventService {
 
     // Methode pour récupérer tous les evenements
     // Pas besoin de token car pas login
-    getEvents(): Observable<any> {
+    getAllEvents(): Observable<any> {
         return this.http.get('http://localhost:8000/api/events')
     }
 
