@@ -1,0 +1,69 @@
+<section class="event-section">
+    <article class="w-50 mx-auto">
+        <form
+            class="w-100 row-gap-3"
+            [formGroup]="addEventForm"
+            (ngSubmit)="onSubmit()"
+        >
+            <h2>Ajouter un évènement</h2>
+            <!-- Event title -->
+            <div>
+                <label for="event_name"></label>
+                <input
+                    type="text"
+                    id="event_name"
+                    placeholder="Titre"
+                    formControlName="title"
+                    class="p-2 w-100"
+                />
+            </div>
+            <!-- Event description -->
+            <label for="description"></label>
+            <textarea
+                type="text"
+                id="description"
+                placeholder="Description"
+                formControlName="description"
+                class="p-2 w-100"
+            ></textarea>
+            <!-- location -->
+            <label for="location"></label>
+            <input
+                type="text"
+                id="location"
+                placeholder="Lieu de l'évènement"
+                formControlName="location"
+                class="p-2"
+            />
+            <!-- image -->
+            <!-- <label for="image"></label>
+            <input
+                type="file"
+                id="image"
+                placeholder="Chargez votre image"
+                formControlName="image"
+                class="p-2"
+            /> -->
+            <!-- image -->
+            <label for="image"></label>
+            <input
+                type="text"
+                id="image"
+                placeholder="Chargez votre image"
+                formControlName="image"
+                class="p-2"
+            />
+
+            <!-- start date -->
+            <label for="date_start"></label>
+            <input
+                type="date"
+                id="date_start"
+                placeholder="Date de l'évènement"
+                formControlName="date_start"
+                class="p-2"
+            />
+            <button type="submit" class="submit-btn w-50">Ajouter</button>
+        </form>
+    </article>
+</section>

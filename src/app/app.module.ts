@@ -2,11 +2,10 @@ import { NgModule } from '@angular/core'
 import { BrowserModule } from '@angular/platform-browser'
 import { AppRoutingModule } from './app-routing.module'
 import { AppComponent } from './app.component'
-import { HeaderModule } from '../components/header/header.module'
-import { FooterModule } from '../components/footer/footer.module'
-import { HomeModule } from '../pages/home/home.module'
+import { HeaderModule } from '../core/header/header.module'
+import { FooterModule } from '../core/footer/footer.module'
 import { CommonModule } from '@angular/common'
-import { WelcomeModule } from '../components/welcome/welcome.module'
+import { HttpClient, HttpClientModule } from '@angular/common/http'
 
 @NgModule({
     declarations: [AppComponent],
@@ -15,9 +14,8 @@ import { WelcomeModule } from '../components/welcome/welcome.module'
         AppRoutingModule,
         HeaderModule,
         FooterModule,
-        // HomeModule,
-        // WelcomeModule,
         CommonModule,
+        HttpClientModule,
     ],
     providers: [],
     bootstrap: [AppComponent],
